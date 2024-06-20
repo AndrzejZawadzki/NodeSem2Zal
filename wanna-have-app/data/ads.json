@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Sprzedam rower",
+    "description": "Rower górski, stan bardzo dobry.",
+    "author": "Jan Kowalski",
+    "category": "Sport",
+    "tags": [
+      "rower",
+      "sport",
+      "sprzedaż"
+    ],
+    "price": 500,
+    "createdAt": "2024-06-20T21:11:40.062Z"
+  },
+  {
+    "id": 2,
+    "title": "Kupie rower",
+    "description": "Rower górski, stan bardzo dobry.",
+    "author": "Maria Kowalska",
+    "category": "Sport",
+    "tags": [
+      "rower",
+      "sport",
+      "sprzedaż"
+    ],
+    "price": 0,
+    "createdAt": "2024-06-20T22:23:31.830Z"
+  },
+  {
+    "id": 3,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:31:39.319Z"
+  },
+  {
+    "id": 2,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:33:21.102Z"
+  },
+  {
+    "id": 3,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:33:25.644Z"
+  },
+  {
+    "id": 4,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:33:27.016Z"
+  },
+  {
+    "id": 5,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:33:27.920Z"
+  },
+  {
+    "id": 6,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:33:28.931Z"
+  },
+  {
+    "id": 7,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:33:29.894Z"
+  },
+  {
+    "id": 8,
+    "title": "Java Script Developer",
+    "description": "Szukam pracy jako programista JS",
+    "author": "Linus Torvalds",
+    "category": "Praca",
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 20000,
+    "createdAt": "2024-06-20T22:33:30.991Z"
+  }
+]
