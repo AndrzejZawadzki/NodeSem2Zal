@@ -1,17 +1,18 @@
 [
   {
     "id": 2,
-    "title": "Kupie rower",
+    "title": "Sprzedam rower górski 29. Stan idealny - nieśmigany",
     "description": "Rower górski, stan bardzo dobry.",
-    "author": "Maria Kowalska",
+    "author": "Luis Antonia Armstrong",
     "category": "Sport",
     "tags": [
       "rower",
       "sport",
       "sprzedaż"
     ],
-    "price": 0,
-    "createdAt": "2024-06-20T22:23:31.830Z"
+    "price": 8500,
+    "createdAt": "2024-06-20T22:23:31.830Z",
+    "updatedAt": "2024-06-21T10:08:06.211Z"
   },
   {
     "id": 3,
@@ -57,17 +58,18 @@
   },
   {
     "id": 4,
-    "title": "Java Script Developer",
+    "title": "Sprzedam rower górski 29. Stan idealny",
     "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
+    "author": "Luis Armstrong",
     "category": "Praca",
     "tags": [
       "JS",
       "programista",
       "praca"
     ],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:33:27.016Z"
+    "price": 1500,
+    "createdAt": "2024-06-20T22:33:27.016Z",
+    "updatedAt": "2024-06-21T09:56:32.488Z"
   },
   {
     "id": 5,

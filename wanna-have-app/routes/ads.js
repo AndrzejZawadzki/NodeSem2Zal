@@ -108,4 +108,27 @@ router.delete("/ads/:id", (req, res) => {
   res.status(200).send(`Ad with ID ${req.params.id} deleted successfully`);
 });
 
+// Update an ad by ID
+router.put("/ads/:id", (req, res) => {
+  let ads = readAdsFromFile();
+  const adIndex = ads.findIndex((ad) => ad.id === parseInt(req.params.id));
+  if (adIndex === -1) {
+    return res.status(404).send("Ad not found");
+  }
+
+  const { title, description, author, category, tags, price } = req.body;
+  const ad = ads[adIndex];
+  ad.title = title || ad.title;
+  ad.description = description || ad.description;
+  ad.author = author || ad.author;
+  ad.category = category || ad.category;
+  ad.tags = tags || ad.tags;
+  ad.price = price || ad.price;
+  ad.updatedAt = new Date();
+
+  ads[adIndex] = ad;
+  writeAdsToFile(ads);
+  res.status(200).json(ad);
+});
+
 module.exports = router;
