@@ -26,6 +26,11 @@ const formatAdToText = (ad) => {
   )}\nPrice: ${ad.price}\nCreated At: ${ad.createdAt}`;
 };
 
+// Helper function to format a list of ads to plain text
+const formatAdsToText = (ads) => {
+  return ads.map(formatAdToText).join("\n\n");
+};
+
 // Heartbeat endpoint
 router.get("/heartbeat", (req, res) => {
   res.send(new Date().toISOString());
@@ -53,17 +58,7 @@ router.get("/ads/:id", (req, res) => {
     "text/plain": () => res.send(formatAdToText(ad)),
     "text/html": () =>
       res.send(
-        `<h1>${ad.title}</h1><p>${
-          ad.description
-        }</p><p><strong>Author:</strong> ${
-          ad.author
-        }</p><p><strong>Category:</strong> ${
-          ad.category
-        }</p><p><strong>Tags:</strong> ${ad.tags.join(
-          ", "
-        )}</p><p><strong>Price:</strong> ${
-          ad.price
-        }</p><p><strong>Created At:</strong> ${ad.createdAt}</p>`
+        `<h1>${ad.title}</h1><p>${ad.description}</p><p><strong>Author:</strong> ${ad.author}</p><p><strong>Category:</strong> ${ad.category}</p><p><strong>Tags:</strong> ${ad.tags}</p><p><strong>Price:</strong> ${ad.price}</p><p><strong>Created At:</strong> ${ad.createdAt}</p>`
       ),
     "application/json": () => res.json(ad),
   });
@@ -98,6 +93,19 @@ router.get("/ads", (req, res) => {
     },
     "application/json": () => res.json(ads),
   });
+});
+
+// Delete an ad by ID
+router.delete("/ads/:id", (req, res) => {
+  let ads = readAdsFromFile();
+  const adIndex = ads.findIndex((ad) => ad.id === parseInt(req.params.id));
+  if (adIndex === -1) {
+    return res.status(404).send("Ad not found");
+  }
+
+  ads.splice(adIndex, 1);
+  writeAdsToFile(ads);
+  res.status(200).send(`Ad with ID ${req.params.id} deleted successfully`);
 });
 
 module.exports = router;

@@ -1,19 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Sprzedam rower",
-    "description": "Rower górski, stan bardzo dobry.",
-    "author": "Jan Kowalski",
-    "category": "Sport",
-    "tags": [
-      "rower",
-      "sport",
-      "sprzedaż"
-    ],
-    "price": 500,
-    "createdAt": "2024-06-20T21:11:40.062Z"
-  },
-  {
     "id": 2,
     "title": "Kupie rower",
     "description": "Rower górski, stan bardzo dobry.",
