@@ -1,24 +1,18 @@
 [
   {
-    "id": 2,
-    "title": "Sprzedam rower górski 29. Stan idealny - nieśmigany",
-    "description": "Rower górski, stan bardzo dobry.",
-    "author": "Luis Antonia Armstrong",
-    "category": "Sport",
-    "tags": ["rower", "sport", "sprzedaż"],
-    "price": 8500,
-    "createdAt": "2024-06-20T22:23:31.830Z",
-    "updatedAt": "2024-06-21T10:08:06.211Z"
-  },
-  {
     "id": 3,
-    "title": "Java Script Developer",
+    "title": "Sprzedam rower górski 29. Stan idealny - nieśmigany",
     "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
+    "author": "Czesław Lang",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:31:39.319Z"
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
+    "price": 18500,
+    "createdAt": "2024-06-20T22:31:39.319Z",
+    "updatedAt": "2024-06-21T11:50:12.659Z"
   },
   {
     "id": 4,
@@ -26,7 +20,11 @@
     "description": "Szukam pracy jako programista JS",
     "author": "Linus Torvalds",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
     "price": 20000,
     "createdAt": "2024-06-20T22:33:21.102Z"
   },
@@ -36,7 +34,11 @@
     "description": "Szukam pracy jako programista JS",
     "author": "Linus Torvalds",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
     "price": 20000,
     "createdAt": "2024-06-20T22:33:25.644Z"
   },
@@ -46,7 +48,11 @@
     "description": "Szukam pracy jako programista JS",
     "author": "Luis Armstrong",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
     "price": 1500,
     "createdAt": "2024-06-20T22:33:27.016Z",
     "updatedAt": "2024-06-21T09:56:32.488Z"
@@ -57,7 +63,11 @@
     "description": "Szukam pracy jako programista JS",
     "author": "Linus Torvalds",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
     "price": 20000,
     "createdAt": "2024-06-20T22:33:27.920Z"
   },
@@ -67,7 +77,11 @@
     "description": "Szukam pracy jako programista JS",
     "author": "Linus Torvalds",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
     "price": 20000,
     "createdAt": "2024-06-20T22:33:28.931Z"
   },
@@ -77,7 +91,11 @@
     "description": "Szukam pracy jako programista JS",
     "author": "Linus Torvalds",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
     "price": 20000,
     "createdAt": "2024-06-20T22:33:29.894Z"
   },
@@ -87,7 +105,11 @@
     "description": "Szukam pracy jako programista JS",
     "author": "Linus Torvalds",
     "category": "Praca",
-    "tags": ["JS", "programista", "praca"],
+    "tags": [
+      "JS",
+      "programista",
+      "praca"
+    ],
     "price": 20000,
     "createdAt": "2024-06-20T22:33:30.991Z"
   },
@@ -97,7 +119,11 @@
     "description": "Wynajme mieszkanie 3 pokojowe w centrum",
     "author": "Tomasz Frankowski",
     "category": "Nieruchomosci",
-    "tags": ["mieszkanie", "wynajem", "3pokoje"],
+    "tags": [
+      "mieszkanie",
+      "wynajem",
+      "3pokoje"
+    ],
     "price": 3500,
     "createdAt": "2024-06-21T07:55:01.955Z"
   },
@@ -107,7 +133,11 @@
     "description": "Wynajme mieszkanie 2 pokojowe w centrum",
     "author": "Tomasz Frankowski",
     "category": "Nieruchomosci",
-    "tags": ["mieszkanie", "wynajem", "2pokoje"],
+    "tags": [
+      "mieszkanie",
+      "wynajem",
+      "2pokoje"
+    ],
     "price": 2500,
     "createdAt": "2024-06-21T07:55:49.563Z"
   },
@@ -117,7 +147,11 @@
     "description": "Wynajme mieszkanie 2 pokojowe w centrum",
     "author": "Tomasz Frankowski",
     "category": "Nieruchomosci",
-    "tags": ["mieszkanie", "wynajem", "2pokoje"],
+    "tags": [
+      "mieszkanie",
+      "wynajem",
+      "2pokoje"
+    ],
     "price": 2200,
     "createdAt": "2024-06-21T07:56:09.203Z"
   }

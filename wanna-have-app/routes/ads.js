@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 const path = require("path");
 const Ad = require("../models/ad");
+const authMiddleware = require("../middelware/auth");
 
 const adsFilePath = path.join(__dirname, "../data/ads.json");
 
@@ -96,7 +97,7 @@ router.get("/ads", (req, res) => {
 });
 
 // Delete an ad by ID
-router.delete("/ads/:id", (req, res) => {
+router.delete("/ads/:id", authMiddleware, (req, res) => {
   let ads = readAdsFromFile();
   const adIndex = ads.findIndex((ad) => ad.id === parseInt(req.params.id));
   if (adIndex === -1) {
@@ -109,7 +110,7 @@ router.delete("/ads/:id", (req, res) => {
 });
 
 // Update an ad by ID
-router.put("/ads/:id", (req, res) => {
+router.put("/ads/:id", authMiddleware, (req, res) => {
   let ads = readAdsFromFile();
   const adIndex = ads.findIndex((ad) => ad.id === parseInt(req.params.id));
   if (adIndex === -1) {
