@@ -30,6 +30,12 @@ dotenv.config();
 app.use(bodyParser.json());
 app.use("/api", adsRoutes);
 
+// Middleware to handle 404 errors by returning a static image
+app.use((req, res) => {
+  const imagePath = path.join(__dirname, "public", "404.jpg");
+  res.status(404).sendFile(imagePath);
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
