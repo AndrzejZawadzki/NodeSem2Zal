@@ -1,5 +1,5 @@
 class Ad {
-  constructor(title, description, author, category, tags, price) {
+  constructor(title, description, author, category, tags, price, userId) {
     this.id = Ad.incrementId();
     this.title = title;
     this.description = description;
@@ -8,6 +8,7 @@ class Ad {
     this.tags = tags;
     this.price = price;
     this.createdAt = new Date();
+    this.userId = userId;
   }
 
   static incrementId() {
@@ -23,7 +24,7 @@ class Ad {
       this.category
     }\nTags: ${this.tags.join(", ")}\nPrice: ${this.price}\nCreated At: ${
       this.createdAt
-    }`;
+    }\nUserId: ${this.userId}`;
   }
 }
 

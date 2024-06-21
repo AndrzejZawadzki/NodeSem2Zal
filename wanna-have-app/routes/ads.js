@@ -24,7 +24,7 @@ const formatAdToText = (ad) => {
     ad.description
   }\nAuthor: ${ad.author}\nCategory: ${ad.category}\nTags: ${ad.tags.join(
     ", "
-  )}\nPrice: ${ad.price}\nCreated At: ${ad.createdAt}`;
+  )}\nPrice: ${ad.price}\nCreated At: ${ad.createdAt}\nUserId: ${ad.userId}`;
 };
 
 // Helper function to format a list of ads to plain text
@@ -39,12 +39,14 @@ router.get("/heartbeat", (req, res) => {
 
 // Add a new ad
 router.post("/ads", (req, res) => {
-  const { title, description, author, category, tags, price } = req.body;
-  const ad = new Ad(title, description, author, category, tags, price);
+  const { title, description, author, category, tags, price, userId } =
+    req.body;
+  const ad = new Ad(title, description, author, category, tags, price, userId);
   const ads = readAdsFromFile();
   ads.push(ad);
   writeAdsToFile(ads);
   res.status(201).json(ad);
+  console.log(req.body);
 });
 
 // Get a single ad by ID
@@ -59,7 +61,7 @@ router.get("/ads/:id", (req, res) => {
     "text/plain": () => res.send(formatAdToText(ad)),
     "text/html": () =>
       res.send(
-        `<h1>${ad.title}</h1><p>${ad.description}</p><p><strong>Author:</strong> ${ad.author}</p><p><strong>Category:</strong> ${ad.category}</p><p><strong>Tags:</strong> ${ad.tags}</p><p><strong>Price:</strong> ${ad.price}</p><p><strong>Created At:</strong> ${ad.createdAt}</p>`
+        `<h1>${ad.title}</h1><p>${ad.description}</p><p><strong>Author:</strong> ${ad.author}</p><p><strong>Category:</strong> ${ad.category}</p><p><strong>Tags:</strong> ${ad.tags}</p><p><strong>Price:</strong> ${ad.price}</p><p><strong>Created At:</strong> ${ad.createdAt}</p><p><strong>UserId:</strong> ${ad.userId}</p>`
       ),
     "application/json": () => res.json(ad),
   });
@@ -87,7 +89,9 @@ router.get("/ads", (req, res) => {
               ", "
             )}</p><p><strong>Price:</strong> ${
               ad.price
-            }</p><p><strong>Created At:</strong> ${ad.createdAt}</p>`
+            }</p><p><strong>Created At:</strong> ${
+              ad.createdAt
+            }</p><p><strong>UserId:</strong> ${ad.userId}</p>`
         )
         .join("<hr>");
       res.send(html);
@@ -104,6 +108,14 @@ router.delete("/ads/:id", authMiddleware, (req, res) => {
     return res.status(404).send("Ad not found");
   }
 
+  const ad = ads[adIndex];
+
+  if (ad.userId !== req.user.id) {
+    return res
+      .status(403)
+      .json({ error: "Forbidden: You can only delete your own ads" });
+  }
+
   ads.splice(adIndex, 1);
   writeAdsToFile(ads);
   res.status(200).send(`Ad with ID ${req.params.id} deleted successfully`);
@@ -117,8 +129,15 @@ router.put("/ads/:id", authMiddleware, (req, res) => {
     return res.status(404).send("Ad not found");
   }
 
-  const { title, description, author, category, tags, price } = req.body;
   const ad = ads[adIndex];
+  if (ad.userId !== req.user.id) {
+    return res
+      .status(403)
+      .json({ error: "Forbidden: You can only update your own ads" });
+  }
+
+  const { title, description, author, category, tags, price, userId } =
+    req.body;
   ad.title = title || ad.title;
   ad.description = description || ad.description;
   ad.author = author || ad.author;
@@ -126,6 +145,7 @@ router.put("/ads/:id", authMiddleware, (req, res) => {
   ad.tags = tags || ad.tags;
   ad.price = price || ad.price;
   ad.updatedAt = new Date();
+  ad.userId = userId || ad.userId;
 
   ads[adIndex] = ad;
   writeAdsToFile(ads);
@@ -181,7 +201,9 @@ router.get("/search", (req, res) => {
               ", "
             )}</p><p><strong>Price:</strong> ${
               ad.price
-            }</p><p><strong>Created At:</strong> ${ad.createdAt}</p>`
+            }</p><p><strong>Created At:</strong> ${
+              ad.createdAt
+            }</p><p><strong>UserId:</strong> ${ad.userId}</p>`
         )
         .join("<hr>");
       res.send(html);

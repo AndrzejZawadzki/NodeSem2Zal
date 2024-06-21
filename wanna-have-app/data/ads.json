@@ -1,158 +1,123 @@
 [
   {
-    "id": 3,
-    "title": "Sprzedam rower górski 29. Stan idealny - nieśmigany",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Czesław Lang",
+    "id": 1,
+    "title": "Ciesli zatrudnie",
+    "description": "Praca od zaraz",
+    "author": "John",
     "category": "Praca",
     "tags": [
-      "JS",
-      "programista",
-      "praca"
+      "praca",
+      "ciesle",
+      "budowa"
     ],
-    "price": 18500,
-    "createdAt": "2024-06-20T22:31:39.319Z",
-    "updatedAt": "2024-06-21T11:50:12.659Z"
+    "price": 35,
+    "createdAt": "2024-06-21T14:32:09.597Z",
+    "userId": 2
+  },
+  {
+    "id": 2,
+    "title": "Ciesli zatrudnie",
+    "description": "Praca od zaraz",
+    "author": "John",
+    "category": "Praca",
+    "tags": [
+      "praca",
+      "ciesle",
+      "budowa"
+    ],
+    "price": 35,
+    "createdAt": "2024-06-21T14:32:15.353Z",
+    "userId": 2
+  },
+  {
+    "id": 3,
+    "title": "Ciesli zatrudnie",
+    "description": "Praca od zaraz",
+    "author": "John",
+    "category": "Praca",
+    "tags": [
+      "praca",
+      "ciesle",
+      "budowa"
+    ],
+    "price": 35,
+    "createdAt": "2024-06-21T14:32:16.577Z",
+    "userId": 2
   },
   {
     "id": 4,
-    "title": "Java Script Developer",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
+    "title": "Ciesli zatrudnie",
+    "description": "Praca od zaraz",
+    "author": "John",
     "category": "Praca",
     "tags": [
-      "JS",
-      "programista",
-      "praca"
+      "praca",
+      "ciesle",
+      "budowa"
     ],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:33:21.102Z"
+    "price": 35,
+    "createdAt": "2024-06-21T14:32:17.710Z",
+    "userId": 2
   },
   {
     "id": 5,
-    "title": "Java Script Developer",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
+    "title": "Ciesli zatrudnie",
+    "description": "Praca od zaraz",
+    "author": "John",
     "category": "Praca",
     "tags": [
-      "JS",
-      "programista",
-      "praca"
+      "praca",
+      "ciesle",
+      "budowa"
     ],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:33:25.644Z"
+    "price": 35,
+    "createdAt": "2024-06-21T14:32:19.011Z",
+    "userId": 2
   },
   {
     "id": 6,
-    "title": "Sprzedam rower górski 29. Stan idealny",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Luis Armstrong",
+    "title": "Ciesli zatrudnie",
+    "description": "Praca od zaraz",
+    "author": "John",
     "category": "Praca",
     "tags": [
-      "JS",
-      "programista",
-      "praca"
+      "praca",
+      "ciesle",
+      "budowa"
     ],
-    "price": 1500,
-    "createdAt": "2024-06-20T22:33:27.016Z",
-    "updatedAt": "2024-06-21T09:56:32.488Z"
+    "price": 35,
+    "createdAt": "2024-06-21T14:32:20.206Z",
+    "userId": 2
   },
   {
     "id": 7,
-    "title": "Java Script Developer",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
+    "title": "Ciesli zatrudnie",
+    "description": "Praca od zaraz",
+    "author": "John",
     "category": "Praca",
     "tags": [
-      "JS",
-      "programista",
-      "praca"
+      "praca",
+      "ciesle",
+      "budowa"
     ],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:33:27.920Z"
+    "price": 35,
+    "createdAt": "2024-06-21T14:32:21.231Z",
+    "userId": 2
   },
   {
     "id": 8,
-    "title": "Java Script Developer",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
+    "title": "Sprzedam rower górski 29. Stan idealny - nieśmigany",
+    "description": "Praca od zaraz",
+    "author": "Czesław Lang",
     "category": "Praca",
     "tags": [
-      "JS",
-      "programista",
-      "praca"
+      "praca",
+      "ciesle",
+      "budowa"
     ],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:33:28.931Z"
-  },
-  {
-    "id": 9,
-    "title": "Java Script Developer",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
-    "category": "Praca",
-    "tags": [
-      "JS",
-      "programista",
-      "praca"
-    ],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:33:29.894Z"
-  },
-  {
-    "id": 10,
-    "title": "Java Script Developer",
-    "description": "Szukam pracy jako programista JS",
-    "author": "Linus Torvalds",
-    "category": "Praca",
-    "tags": [
-      "JS",
-      "programista",
-      "praca"
-    ],
-    "price": 20000,
-    "createdAt": "2024-06-20T22:33:30.991Z"
-  },
-  {
-    "id": 11,
-    "title": "65m2 3 pokoje centrum",
-    "description": "Wynajme mieszkanie 3 pokojowe w centrum",
-    "author": "Tomasz Frankowski",
-    "category": "Nieruchomosci",
-    "tags": [
-      "mieszkanie",
-      "wynajem",
-      "3pokoje"
-    ],
-    "price": 3500,
-    "createdAt": "2024-06-21T07:55:01.955Z"
-  },
-  {
-    "id": 12,
-    "title": "40m2 2 pokoje centrum",
-    "description": "Wynajme mieszkanie 2 pokojowe w centrum",
-    "author": "Tomasz Frankowski",
-    "category": "Nieruchomosci",
-    "tags": [
-      "mieszkanie",
-      "wynajem",
-      "2pokoje"
-    ],
-    "price": 2500,
-    "createdAt": "2024-06-21T07:55:49.563Z"
-  },
-  {
-    "id": 13,
-    "title": "45m2 2 pokoje centrum",
-    "description": "Wynajme mieszkanie 2 pokojowe w centrum",
-    "author": "Tomasz Frankowski",
-    "category": "Nieruchomosci",
-    "tags": [
-      "mieszkanie",
-      "wynajem",
-      "2pokoje"
-    ],
-    "price": 2200,
-    "createdAt": "2024-06-21T07:56:09.203Z"
+    "price": 1500,
+    "createdAt": "2024-06-21T14:32:22.135Z",
+    "userId": 2,
+    "updatedAt": "2024-06-21T14:47:52.306Z"
   }
 ]
