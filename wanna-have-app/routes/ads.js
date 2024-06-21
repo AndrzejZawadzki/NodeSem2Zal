@@ -69,4 +69,35 @@ router.get("/ads/:id", (req, res) => {
   });
 });
 
+// Get all ads
+router.get("/ads", (req, res) => {
+  const ads = readAdsFromFile();
+  if (!ads) {
+    return res.status(404).send("Ads not found");
+  }
+  res.format({
+    "text/plain": () => res.send(formatAdsToText(ads)),
+    "text/html": () => {
+      const html = ads
+        .map(
+          (ad) =>
+            `<h1>${ad.title}</h1><p>${
+              ad.description
+            }</p><p><strong>Author:</strong> ${
+              ad.author
+            }</p><p><strong>Category:</strong> ${
+              ad.category
+            }</p><p><strong>Tags:</strong> ${ad.tags.join(
+              ", "
+            )}</p><p><strong>Price:</strong> ${
+              ad.price
+            }</p><p><strong>Created At:</strong> ${ad.createdAt}</p>`
+        )
+        .join("<hr>");
+      res.send(html);
+    },
+    "application/json": () => res.json(ads),
+  });
+});
+
 module.exports = router;

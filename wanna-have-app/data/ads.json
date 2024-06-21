@@ -138,5 +138,47 @@
     ],
     "price": 20000,
     "createdAt": "2024-06-20T22:33:30.991Z"
+  },
+  {
+    "id": 1,
+    "title": "65m2 3 pokoje centrum",
+    "description": "Wynajme mieszkanie 3 pokojowe w centrum",
+    "author": "Tomasz Frankowski",
+    "category": "Nieruchomosci",
+    "tags": [
+      "mieszkanie",
+      "wynajem",
+      "3pokoje"
+    ],
+    "price": 3500,
+    "createdAt": "2024-06-21T07:55:01.955Z"
+  },
+  {
+    "id": 2,
+    "title": "40m2 2 pokoje centrum",
+    "description": "Wynajme mieszkanie 2 pokojowe w centrum",
+    "author": "Tomasz Frankowski",
+    "category": "Nieruchomosci",
+    "tags": [
+      "mieszkanie",
+      "wynajem",
+      "2pokoje"
+    ],
+    "price": 2500,
+    "createdAt": "2024-06-21T07:55:49.563Z"
+  },
+  {
+    "id": 3,
+    "title": "45m2 2 pokoje centrum",
+    "description": "Wynajme mieszkanie 2 pokojowe w centrum",
+    "author": "Tomasz Frankowski",
+    "category": "Nieruchomosci",
+    "tags": [
+      "mieszkanie",
+      "wynajem",
+      "2pokoje"
+    ],
+    "price": 2200,
+    "createdAt": "2024-06-21T07:56:09.203Z"
   }
 ]
