@@ -18,7 +18,7 @@ const authMiddleware = (req, res, next) => {
   const user = users.find(
     (u) => u.username === username && u.password === password
   );
-  console.log("user", user);
+
   if (!user) {
     return res.status(403).json({ error: "Forbidden: Incorrect credentials" });
   }

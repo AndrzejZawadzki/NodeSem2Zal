@@ -88,7 +88,7 @@
     "price": 1500,
     "createdAt": "2024-06-21T14:32:20.206Z",
     "userId": 2,
-    "updatedAt": "2024-06-21T15:16:04.007Z"
+    "updatedAt": "2024-06-21T16:41:12.501Z"
   },
   {
     "id": 1,
@@ -104,5 +104,50 @@
     "price": 350000,
     "createdAt": "2024-06-21T15:14:24.938Z",
     "userId": 1
+  },
+  {
+    "id": 1,
+    "title": "Kupie działke",
+    "description": "minimum 2000m2 w promieniu 10km od centrum",
+    "author": "Edyta",
+    "category": "Nieruchmosci",
+    "tags": [
+      "dom",
+      "działki",
+      "budowa"
+    ],
+    "price": 30000,
+    "createdAt": "2024-06-21T16:28:44.657Z",
+    "userId": 1
+  },
+  {
+    "id": 3,
+    "title": "Kupie działke",
+    "description": "minimum 2000m2 w promieniu 10km od centrum",
+    "author": "Max",
+    "category": "Nieruchmosci",
+    "tags": [
+      "dom",
+      "działki",
+      "budowa"
+    ],
+    "price": 30000,
+    "createdAt": "2024-06-21T16:29:47.908Z",
+    "userId": 3
+  },
+  {
+    "id": 1,
+    "title": "Kupie działke",
+    "description": "minimum 2000m2 w promieniu 10km od centrum",
+    "author": "Max",
+    "category": "Nieruchmosci",
+    "tags": [
+      "dom",
+      "działki",
+      "budowa"
+    ],
+    "price": 30000,
+    "createdAt": "2024-06-21T18:02:13.825Z",
+    "userId": 3
   }
 ]

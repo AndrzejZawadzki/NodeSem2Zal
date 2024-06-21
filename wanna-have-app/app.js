@@ -36,6 +36,12 @@ app.use((req, res) => {
   res.status(404).sendFile(imagePath);
 });
 
+// Global error handling middleware
+app.use((err, req, res, next) => {
+  console.error("Error", err);
+  res.status(500).json({ error: "An internal server error occurred" });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
