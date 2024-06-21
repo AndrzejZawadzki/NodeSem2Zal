@@ -131,4 +131,62 @@ router.put("/ads/:id", (req, res) => {
   res.status(200).json(ad);
 });
 
+// Search ads
+router.get("/search", (req, res) => {
+  const { title, author, description, category, minPrice, maxPrice } =
+    req.query;
+  let ads = readAdsFromFile();
+
+  if (title) {
+    ads = ads.filter((ad) =>
+      ad.title.toLowerCase().includes(title.toLowerCase())
+    );
+  }
+  if (author) {
+    ads = ads.filter((ad) =>
+      ad.author.toLowerCase().includes(author.toLowerCase())
+    );
+  }
+  if (description) {
+    ads = ads.filter((ad) =>
+      ad.description.toLowerCase().includes(description.toLowerCase())
+    );
+  }
+  if (category) {
+    ads = ads.filter(
+      (ad) => ad.category.toLowerCase() === category.toLowerCase()
+    );
+  }
+  if (minPrice) {
+    ads = ads.filter((ad) => ad.price >= parseFloat(minPrice));
+  }
+  if (maxPrice) {
+    ads = ads.filter((ad) => ad.price <= parseFloat(maxPrice));
+  }
+
+  res.format({
+    "text/plain": () => res.send(formatAdsToText(ads)),
+    "text/html": () => {
+      const html = ads
+        .map(
+          (ad) =>
+            `<h1>${ad.title}</h1><p>${
+              ad.description
+            }</p><p><strong>Author:</strong> ${
+              ad.author
+            }</p><p><strong>Category:</strong> ${
+              ad.category
+            }</p><p><strong>Tags:</strong> ${ad.tags.join(
+              ", "
+            )}</p><p><strong>Price:</strong> ${
+              ad.price
+            }</p><p><strong>Created At:</strong> ${ad.createdAt}</p>`
+        )
+        .join("<hr>");
+      res.send(html);
+    },
+    "application/json": () => res.json(ads),
+  });
+});
+
 module.exports = router;
