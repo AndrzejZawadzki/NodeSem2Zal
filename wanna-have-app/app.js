@@ -16,6 +16,8 @@ if (debugMode) {
     const logEntry = `${new Date().toISOString()} - ${req.method} - ${
       req.originalUrl
     }\n`;
+    console.log(logEntry);
+
     fs.appendFile(logFilePath, logEntry, (err) => {
       if (err) {
         console.error("Failed to log request:", err);
