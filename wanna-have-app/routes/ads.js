@@ -4,11 +4,11 @@ const fs = require("fs");
 const path = require("path");
 const Ad = require("../models/ad");
 const authMiddleware = require("../middelware/auth");
-const { err } = require("console");
 
-const adsFilePath = path.join(__dirname, "../data/ads.json");
+// ***** This part concerns using file for storing ads ******
 
 // Helper function to read ads from file
+const adsFilePath = path.join(__dirname, "../data/ads.json");
 const readAdsFromFile = () => {
   const data = fs.readFileSync(adsFilePath);
   return JSON.parse(data);
@@ -146,7 +146,7 @@ router.delete("/ads/:id", authMiddleware, (req, res, next) => {
 });
 
 // Update an ad by ID
-router.put("/ads/:id", authMiddleware, (req, res, next) => {
+router.patch("/ads/:id", authMiddleware, (req, res, next) => {
   try {
     let ads = readAdsFromFile();
     const adIndex = ads.findIndex((ad) => ad.id === parseInt(req.params.id));

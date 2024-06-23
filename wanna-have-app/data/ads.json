@@ -85,13 +85,13 @@
       "ciesle",
       "budowa"
     ],
-    "price": 1500,
+    "price": 500,
     "createdAt": "2024-06-21T14:32:20.206Z",
     "userId": 2,
-    "updatedAt": "2024-06-21T16:41:12.501Z"
+    "updatedAt": "2024-06-23T13:44:37.394Z"
   },
   {
-    "id": 1,
+    "id": 7,
     "title": "Kupie dom",
     "description": "minimum 200m2 moze byc do remontu",
     "author": "Edyta",
@@ -106,7 +106,7 @@
     "userId": 1
   },
   {
-    "id": 1,
+    "id": 8,
     "title": "Kupie działke",
     "description": "minimum 2000m2 w promieniu 10km od centrum",
     "author": "Edyta",
@@ -121,7 +121,7 @@
     "userId": 1
   },
   {
-    "id": 3,
+    "id": 9,
     "title": "Kupie działke",
     "description": "minimum 2000m2 w promieniu 10km od centrum",
     "author": "Max",
@@ -136,22 +136,7 @@
     "userId": 3
   },
   {
-    "id": 1,
-    "title": "Kupie działke",
-    "description": "minimum 2000m2 w promieniu 10km od centrum",
-    "author": "Max",
-    "category": "Nieruchmosci",
-    "tags": [
-      "dom",
-      "działki",
-      "budowa"
-    ],
-    "price": 30000,
-    "createdAt": "2024-06-21T18:02:13.825Z",
-    "userId": 3
-  },
-  {
-    "id": 1,
+    "id": 11,
     "title": "Kupie dom",
     "description": "minimum 2000m2 w promieniu 10km od centrum",
     "author": "Max",
@@ -163,6 +148,36 @@
     ],
     "price": 30000,
     "createdAt": "2024-06-22T19:45:00.708Z",
+    "userId": 3
+  },
+  {
+    "id": 1,
+    "title": "Kupie domek nad rzeka",
+    "description": "minimum 2000m2 w promieniu 10km od centrum",
+    "author": "Max",
+    "category": "Nieruchmosci",
+    "tags": [
+      "dom",
+      "działki",
+      "budowa"
+    ],
+    "price": 30000,
+    "createdAt": "2024-06-23T18:06:40.599Z",
+    "userId": 3
+  },
+  {
+    "id": 2,
+    "title": "Kupie domek nad rzeka",
+    "description": "minimum 2000m2 w promieniu 10km od centrum",
+    "author": "Max",
+    "category": "Nieruchmosci",
+    "tags": [
+      "dom",
+      "działki",
+      "budowa"
+    ],
+    "price": 30000,
+    "createdAt": "2024-06-23T18:07:23.409Z",
     "userId": 3
   }
 ]
